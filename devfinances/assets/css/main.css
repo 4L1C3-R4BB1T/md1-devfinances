@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+:root {
+    --white: #FFF;
+    --green: #49AA26;
+    --red: #E92929;
+    --green-aqua: #12A454;
+    --green-link: #3DD705;
+    --light-blue: #969CB3;
+    --dark-blue: #363F5F;
+    --dark-green: #2D4A22;
+    --light-grey: #F0F2F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 93.75%; /* 15px */
+}
+
+body {
+    background: var(--light-grey);
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: var(--dark-green);
+    padding: 2rem 0 14rem;
+    text-align: center;
+}
+
+#logo {
+    margin-top: 1.5rem;
+}
+
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--green-link);
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: var(--white);
+    background: var(--green);
+    padding: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--green-link);
+}
+
+.button.new {
+    display: inline-block;
+    margin-bottom: .8rem;
+    margin-top: 1.5rem;
+}
+
+.button.cancel {
+    color: var(--red);
+    border: 2px var(--red) solid;
+    border-radius: 0.25rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+.button.cancel:hover {
+    opacity: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 4rem 0 2rem;
+    color: var(--dark-blue);
+    opacity: 0.6;
+}

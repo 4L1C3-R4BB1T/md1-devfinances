@@ -1,0 +1,30 @@
+#balance {
+    margin-top: -8rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    border-radius: 0.3rem;
+    margin-bottom: 2rem;
+    color: var(--dark-blue);
+}
+
+.card h3 {
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+.card.total {
+    background: var(--green);
+    color: var(--white);
+}
